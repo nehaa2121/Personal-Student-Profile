@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, sans-serif;
+    background-color: #f5f0ff;
+    color: #333;
+    line-height: 1.6;
+}
+header{
+    background-color:#6c4ab6;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+nav a:hover{
+    color: #ffd6f5;
+}
+button, .btn{
+    background-color: #6c4ab6;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+header button {
+    background-color: white;
+    color: #6c4ab6;
+}
+section{
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#home{
+    padding: 100px 20px;
+    background-color: #e6d9ff;
+}
+#home h1{
+    font-size: 40px;
+    color: #6c4ab6;
+}
+#home p{
+    margin: 20px;
+}
+section h2{
+    color: #6c4ab6;
+    margin-bottom: 20px;
+}
+.skills-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.skill{
+    background-color: white;
+    padding: 20px 35px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ccc;
+}
+.project-card{
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #ccc;
+}
+form{
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input, textarea{
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 16px;
+}
+textarea{
+    height: 120px;
+}
+footer{
+    background-color: #6c4ab6;
+    color:white;
+    padding:20px;
+    text-align: center;
+}
+/* Dark mode */
+.dark{
+    background-color: #222;
+    color: white;
+}
+.dark section,
+.dark .project-card,
+.dark .skill {
+    background-color: #333;
+    color: white;
+}
+.dark #home {
+    background-color: #292039;
+}
+.dark #home h1,
+.dark section h2{
+    color: #d5baff;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    #home h1 {
+        font-size: 30px;
+    }
+}
